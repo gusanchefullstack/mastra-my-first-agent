@@ -1,4 +1,5 @@
 import { mastra } from "./mastra";
+import { z } from "zod";
 
 const chefGustavo = mastra.getAgent("chefGustavo");
 
@@ -11,11 +12,11 @@ console.log(`Query:  ${query}`);
 //     maxOutputTokens: 300
 //   },
 // })
-// 
+//
 // console.log(`Response of Chef Gustavo \n:`, limitedResult.text)
 
 // Response stream
-const stream = await chefGustavo.stream(query, { 
+const stream = await chefGustavo.stream(query, {
     modelSettings: {
         maxOutputTokens:300
     }
@@ -25,3 +26,6 @@ for await (const chunk of stream.textStream) {
     process.stdout.write(chunk)
 }
 console.log("\n\n Response complete!!")
+
+
+

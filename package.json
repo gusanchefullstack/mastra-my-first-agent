@@ -23,6 +23,7 @@
     "typescript": "^6.0.3"
   },
   "dependencies": {
-    "@mastra/core": "^1.31.0"
+    "@mastra/core": "^1.31.0",
+    "zod": "^4.4.2"
   }
 }
