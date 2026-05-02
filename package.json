@@ -6,10 +6,22 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gusanchefullstack/mastra-my-first-agent.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
+  "bugs": {
+    "url": "https://github.com/gusanchefullstack/mastra-my-first-agent/issues"
+  },
+  "homepage": "https://github.com/gusanchefullstack/mastra-my-first-agent#readme",
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "typescript": "^6.0.3"
+  },
   "dependencies": {
     "@mastra/core": "^1.31.0"
   }
